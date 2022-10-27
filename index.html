@@ -14,9 +14,22 @@
 </script>
 
  <style>
-  h1 {
+  #active {
     color:red;
   }
+  .saw {
+    color:gray;
+  }
+  h1 {
+    color:black;
+    font-size: 50px;
+    text-align: center;
+  }
+  a {
+    color:blue;
+    text-decoration: none;
+  }
+
  </style>
 </head>
 <body>
@@ -32,10 +45,13 @@
    </p>
    <img src="korea.png" width="75%">
    <p><a href="https://en.wikipedia.org/wiki/South_Korea"
-   target="blank" title="Korea Rep html">
+   target="blank" title="Korea Rep html"
+   class="saw">
    <strong>South Korea</strong></a>,[b] officially the
-   <strong><u>Republic of Korea (ROK)</u></strong>,[c]
-   is a country in East Asia,
+   <strong style="color:black;text-decoration:underline">
+     Republic of Korea (ROK)</strong>,[c]
+   is a <a href="https://en.wikipedia.org/wiki/Country"
+   target="blank" class="saw" id="active">country</a> in East Asia,
    constituting
    the southern part of the Korean Peninsula and
    sharing a land border with North Korea.[d] Its
@@ -72,6 +88,7 @@
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
    </P>
+
    <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
